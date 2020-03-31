@@ -1,0 +1,225 @@
+\documentclass[oneside,a4paper,12pt]{article}
+\usepackage[english,brazilian]{babel}
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}%margens cima, baixo, esquerda direita
+\usepackage{framed}
+\usepackage{booktabs} %Pacote para deixar tabelas mais bonitas.
+\usepackage{color} %Pacote de Cores
+\usepackage{hyperref} %Pacotes para Hiperlinks
+\usepackage{graphicx} %Pacote de imagens
+\graphicspath{{./Figuras/}}%Direciona as imagens para uma pasta chamada "Figuras" (uso isso para organizar. Uma vez que todas as imagens vao ficar em uma pasta isolada)    
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+
+%+++ CABECALHO E RODAPÉ
+
+%--- CABECALHO E RODAPÉ
+
+
+
+%FAZ EDICOES AQUI (somente no conteudo que esta entre entre as ultimas  chaves de cada linha!!!)
+\newcommand{\universidade}{INMETRO}
+\newcommand{\centro}{CENTRO Y}
+\newcommand{\departamento}{POS GRADUACAO}
+\newcommand{\curso}{........}
+\newcommand{\professores}{Marcelo De Cicco}
+\newcommand{\professoresg}{Gabriel}
+\newcommand{\disciplina}{........}
+\newcommand{\tema}{......}
+\newcommand{\turma}{....}
+\newcommand{\data}{\today}
+\newcommand{\tempodeaula}{180 minutos}
+\newcommand{\creditos}{15 aulas, 45 horas ao total, perfazendo 3 creditos}
+%ATE AQUI !!!	
+
+\begin{document}
+	\pagestyle{empty}
+	
+	\begin{center}
+		\includegraphics[width=\linewidth/5]{inmetro-logo.png}%LOGOTIPO DA INSTITUICAO
+	 	\vspace{2pt} 	
+		
+		\universidade
+		\par
+		\centro
+		\par
+		\departamento
+		\par
+		Curso de \curso
+		\par
+		\vspace{12pt}
+		\LARGE \textbf{Plano de Aula}
+		
+	\end{center}
+	
+	\vspace{12pt}
+	
+	\begin{tabular}{ |l|p{12cm}| }
+		
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Dados de Identificação}} \\
+		\hline
+		Professor:         &    \professores           \\
+		\hline
+		Professor:         &    \professoresg           \\
+		\hline
+		Disciplina:        &    \disciplina          \\
+		\hline
+		Tema:              &    \tema                \\
+		\hline
+		Turma:             &    \turma               \\
+		\hline
+		Data:              &    \data                \\
+		\hline
+		Duração da aula:   &    \tempodeaula         \\
+		\hline
+			Creditos:   &    \creditos         \\
+		\hline
+		
+		
+		
+		
+	\end{tabular}
+	\vspace{12pt}
+	
+	\begin{snugshade}
+		\section{Objetivos} % a serem alcançados pelos alunos e não pelo professor. Podem ser divididos em gerais e específicos. 
+		
+		\lefthead
+Apos a conclusao do curso , o aluno devera estar apto a construir algoritmos basicos e plotar graficos de analises estatisticas e modelos.
+        \begin{itemize}
+        \item Como construir a logica de dados voltados a analise estatistica 
+        \item Desenvolver habilidades de data minning, preparando dados brutos para analise .
+        \item Construir \emph{pipelines} basicos voltados a automatizacao de processamento de dados.
+        \item Realizar analise estatitica usando algoritmos em linguagem Python e R.
+        \item Construir e formatar Graficos .
+        \end{itemize} \vspace{0.3cm}
+		
+		
+		
+		
+		
+	\end{snugshade}
+	
+		\subsection{Geral} % projeta resultado geral relativo a execução de conteúdos e procedimentos.
+		%TEXTO COM O OBJJETIVO GERAL
+			Objetivo geral aqui...
+	
+		\subsection{Específicos} % especificam resultados esperados observáveis (geralmente de 3 a 4).
+		%TEXTO COM OS OBJJETIVOS ESP
+			\begin{itemize}
+				\item Objetivo específico a;
+				\item Objetivo específico b;
+				\item Objetivo específico c. 
+			\end{itemize}
+	
+	\begin{snugshade}
+		\section{Ementas} % conteúdos programados para a aula organizados em tópicos (de 4 a 8).
+	\end{snugshade}
+		%TEXTO COM OS CONTEUDOS
+		\begin{itemize}
+		\item Parte I - Introducao e uso basico de Python para ferramentras estatisitcas:
+		 \begin{itemize}
+			\item Aula 1:\\
+			Instalacao de pacote Python e R em sistemas Windows, Linux e Mac. Introducao a linguagem de programacao Python e R. Uso de Python Notebook e ambiente IDE;
+			\item Aula 2:\\
+			Estruturacao de dados, uso de Tuplas, listas, Arrays, Dictionaries e Data Frame. Indexacao e fatiamento de dados, vetores e arrays, Usando Notebooks e R;
+			\item Aula 3:\\
+			Programacao em Python, uso do pacote Pandas, estruturacao de dados para estatistica. Manipulacao dos dados, agrupamento, aplicando 'statmodel' e 'seaborn';
+			\item Aula 4:\\
+			Entrada de daods, lendo entradas, uso de 'regular expressions', importacao de arquivos em formato Excel e Matlab;
+			\item Aula 5:\\
+			Visualizando dados estatisticos, categorias e numericos. Plotagem em Python, dados univariados, bivariados e multivariados;
+			
+		\end{itemize}
+		\item Parte II - Distribuicoes e testes de hipoteses:
+		\begin{itemize}
+		    \item Aula 6:\\
+		    Estatistica basica, populacao e amostra, distribuicao de Probabilidades, discrteas e continuas. Valor Esperado e Variancia,graus de liberdade;
+		    \item Aula 7:\\
+		    Distribuicao de uma bivariavel, caracterizacao, distribuicao discretas, distribuicao normal, continua, outras distribuicoes;
+		    \item Aula 8:\\
+		    Conceitos de hipoteses, erros, p-valor; tamanho da amostra. Generalizacoes e aplicacoes. Tipos de erros, tamanho da amostra, sensitividade e especificidade;
+		    \item Aula 9:\\
+		    Testes de hipoteses, distribuicao de uma media amostral, comparacoes de 2 grupos. Testes estatisticos de hipoteses versus modelagem Estatistica. Comparacao de grupos multiplos. Selecionando o teste certo para comparacao de grupos;
+		    \item Aula 10: \\
+		    Testes de dados categorizados, intervalos de confianca, tabelas de frequencia, teste de confianca  , chi quadrado, teste  exato de Fisher, Teste McNemar, teste Q de Cochran;
+		    
+		    	\item Aula 11:\\
+		    Analise de tempo de sobrevivencia, 'survival distribution', probabilidade de sobrevivencia;
+		    
+		\end{itemize}{}
+		
+		 \item Parte III - Modelagem
+		\begin{itemize}
+		   
+	         \item Aula 12:\\
+	         Modelagem estistica, aplicacao de modelos de regressao linear: correlacao linear. Regressao linear geral. Analise de regressao linear. O valor do ajuste $R^{2}$. Interpretando os coeficientes de modelagem;
+	         
+			\item Aula 13:\\
+			Analise de residuos, outliers e premissas dos modelos de regressao linear, interpretacao dos resultados;
+			
+			\item Aula 14:\\
+			Analise de dados mulitvariados, testes em dados discretos;
+			\item Aula 15:\\
+			Introducao a \textit{Machine Learning};
+		
+		\end{itemize}
+		
+	\end{itemize}
+	
+	\begin{snugshade}
+		\section{Procedimentos metodológicos} % estratégias relevantes adotadas para alcançar os objetivos. 
+	\end{snugshade}
+	%TEXTO COM A METODOLOGIA DA AULA
+	O procedimento...  
+	
+	\begin{snugshade}
+		\section{Recursos didáticos} 
+		
+		% Textbook &  Software
+\lefthead{ Notebook, \& Software}\\
+
+\noindent Notebook: qualquer marca e sistema operacional\\
+
+\noindent Software: SO -> Windows Ananconda (ultima versao)\\
+\noindent Software: SO -> Linux Conda (ultima versao)\\
+\noindent Software: SO -> IOS Ananconda ou Conda (ultima versao)\\
+
+\noindent\\[0.3cm]
+
+		
+		
+		
+	\end{snugshade}
+	%TEXTO COM OS RECURSOS UTILIZADOS NA AULA
+		Utilizarei...
+	
+	\begin{snugshade}
+		\section{Avaliação} % pode ser realizada com diferentes propósitos (diagnóstica, formativa e somativa). Interessante explicitar a atividade avaliativa e os critérios de correção.
+	\end{snugshade}
+	%TEXTO COM A DESCRICAO DO PROCESSO DE AVALIACAO
+	Prof.Marcelo De Cicco:\\
+	A Avaliação sera realizada atraves de questionarios a serem entregrues em data previamente acordada com a turma.\\
+	\vspace{12pt} 
+	Prof. Gabriel:\\
+	
+	\vspace{12pt}
+	% Referências bibliográficas - como no plano de aula v. nao faz citacoes, as bibliografias nao podem ser geradas automaticamente. Entao tera que preencher manualmente   :(
+	
+	\begin{thebibliography}{}
+	%EXEMPLO 1
+	\bibitem{}
+	\noindent Textbook: \emph{Statistics, Data Mining, and Machine Learning in Astronomy}, by Zeljko Ivezic, Andrew J. Connolly, Jacob T. Vanderplas & Alexandre Gray. \\
+    \noindent Textbook: \emph{A student's guide to PYTHON for physical modeling}, by Jesse M. Kinder and Philip Nelson. \\
+
+	
+
+	%EXEMPLO 2
+	\bibitem{}
+	
+	\end{thebibliography}
+		
+	
+\end{document}
